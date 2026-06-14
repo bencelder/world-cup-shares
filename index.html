@@ -36,6 +36,36 @@
 </head>
 <body>
   <div id="root"><div id="boot">Loading WC26 Shares…</div></div>
+
+  <script>
+    // Surface errors on the page (so we can debug without a console).
+    function showError(msg) {
+      var r = document.getElementById("root");
+      if (r) r.innerHTML = '<div style="font-family:-apple-system,sans-serif;color:#C84B3C;' +
+        'padding:24px;white-space:pre-wrap;font-size:14px;line-height:1.5">' +
+        '⚠️ Problem loading the app:\n\n' + String(msg) + '</div>';
+    }
+    window.addEventListener("error", function (e) {
+      showError((e.message || e.error) + (e.filename ? "\n\n" + e.filename + ":" + e.lineno : ""));
+    });
+    window.addEventListener("unhandledrejection", function (e) {
+      showError("Network/promise error: " + (e.reason && e.reason.message ? e.reason.message : e.reason));
+    });
+    window.addEventListener("load", function () {
+      var miss = [];
+      if (!window.React) miss.push("React");
+      if (!window.ReactDOM) miss.push("ReactDOM");
+      if (!window.Recharts) miss.push("Recharts");
+      if (!window.Babel) miss.push("Babel");
+      if (miss.length) showError("These libraries didn't load (CDN blocked?): " + miss.join(", "));
+      // If still on the boot message a few seconds later, app.jsx probably didn't load.
+      setTimeout(function () {
+        if (document.getElementById("boot"))
+          showError("app.jsx didn't run. Check it's committed at the repo root with that exact name (lowercase).");
+      }, 4000);
+    });
+  </script>
+
   <!-- Babel compiles app.jsx in the browser, so you can edit it without any build tools -->
   <script type="text/babel" src="app.jsx" data-presets="react"></script>
 </body>

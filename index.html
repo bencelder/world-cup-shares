@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>WC26 Shares</title>
+
+  <!-- iPhone home-screen / standalone app behaviour -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="WC26 Shares" />
+  <meta name="theme-color" content="#14442F" />
+  <link rel="apple-touch-icon" href="icon-180.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <style>
+    html, body { margin: 0; background: #F4F6F1; }
+    #boot { font-family: -apple-system, sans-serif; color: #5C6B61; text-align: center; padding-top: 40vh; }
+    /* minimal flex helpers the components rely on */
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .flex-wrap { flex-wrap: wrap; }
+    .items-center { align-items: center; }
+    .gap-1 { gap: 4px; } .gap-2 { gap: 8px; } .gap-3 { gap: 12px; } .gap-4 { gap: 16px; }
+    .w-full { width: 100%; }
+    .text-left { text-align: left; }
+    button { border: none; background: none; cursor: pointer; font-family: inherit; }
+  </style>
+
+  <!-- Libraries from CDN (loaded on your friends' phones, not bundled) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/prop-types@15/prop-types.min.js"></script>
+  <script crossorigin src="https://unpkg.com/recharts@2/umd/Recharts.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"><div id="boot">Loading WC26 Shares…</div></div>
+  <!-- Babel compiles app.jsx in the browser, so you can edit it without any build tools -->
+  <script type="text/babel" src="app.jsx" data-presets="react"></script>
+</body>
+</html>

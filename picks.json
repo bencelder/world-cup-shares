@@ -1,0 +1,91 @@
+{
+  "locked": false,
+  "players": [
+    {
+      "name": "Ada",
+      "shares": {
+        "ESP": 3,
+        "ARG": 3,
+        "MAR": 2,
+        "JPN": 2
+      }
+    },
+    {
+      "name": "Niels",
+      "shares": {
+        "FRA": 4,
+        "SEN": 2,
+        "MEX": 2,
+        "URU": 2
+      }
+    },
+    {
+      "name": "Marie",
+      "shares": {
+        "ENG": 3,
+        "POR": 3,
+        "COL": 2,
+        "CRO": 2
+      }
+    },
+    {
+      "name": "Enrico",
+      "shares": {
+        "BRA": 4,
+        "GER": 3,
+        "NED": 3
+      }
+    },
+    {
+      "name": "Lise",
+      "shares": {
+        "ARG": 2,
+        "ESP": 2,
+        "FRA": 2,
+        "ENG": 2,
+        "BRA": 2
+      }
+    },
+    {
+      "name": "Paul",
+      "shares": {
+        "MAR": 4,
+        "TUR": 3,
+        "ECU": 3
+      }
+    },
+    {
+      "name": "Emmy",
+      "shares": {
+        "MEX": 4,
+        "USA": 3,
+        "CAN": 3
+      }
+    },
+    {
+      "name": "Richard",
+      "shares": {
+        "JPN": 4,
+        "KOR": 3,
+        "AUS": 3
+      }
+    },
+    {
+      "name": "Chien",
+      "shares": {
+        "NOR": 4,
+        "BEL": 3,
+        "SUI": 3
+      }
+    },
+    {
+      "name": "Erwin",
+      "shares": {
+        "URU": 3,
+        "CRO": 3,
+        "SEN": 2,
+        "EGY": 2
+      }
+    }
+  ]
+}

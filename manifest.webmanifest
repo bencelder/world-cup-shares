@@ -1,0 +1,14 @@
+{
+  "name": "WC26 Shares",
+  "short_name": "WC26",
+  "description": "World Cup 2026 shares pool — picks, points and standings.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F6F1",
+  "theme_color": "#14442F",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

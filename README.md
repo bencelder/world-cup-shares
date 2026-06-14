@@ -4,6 +4,8 @@ A small web app for a World Cup 2026 shares pool. Runs as a static site on
 GitHub Pages, installs to the iPhone home screen, and pulls live results
 automatically.
 
+Based on https://arajantie.github.io/wc2026/
+
 ## Files
 
 | File | What it is | Do you edit it? |
